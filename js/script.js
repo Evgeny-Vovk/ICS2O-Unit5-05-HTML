@@ -3,8 +3,8 @@
 // This file contains the JS functions for index.html
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit5-03-HTML/sw.js", {
-    scope: "/ICS2O-Unit5-03-HTML/",
+  navigator.serviceWorker.register("/ICS2O-Unit5-05-HTML/sw.js", {
+    scope: "/ICS2O-Unit5-05.-HTML/",
   })
 }
 
