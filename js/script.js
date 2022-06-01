@@ -14,19 +14,29 @@ if (navigator.serviceWorker) {
 function calculate() {
 
   //input
-  const age = parseInt(document.getElementById('age').value)
+  const length1 = parseInt(document.getElementById('length1').value)
+  const length2 = parseInt(document.getElementById('length2').value)
+  const length3 = parseInt(document.getElementById('length3').value)
 
   // process
-  if (age >= 17) {
+  if ((length1 <= 0) || (length2 <= 0) || (length3 <= 0)){
     document.getElementById("answer").innerHTML =
-      "You you are " + age + " years old, so you can see R rated movies."
+      "A length can't be 0 or negative number."
   }
-  else if (age >= 13){
+  else if ((length1 == length2) && (length2 == length3)) {
     document.getElementById("answer").innerHTML =
-      "You are " + age + " years old, so you can see PG-13 rated movies."
+      "The triangle is an equilateral triangle because all of the lengths and angles are same and equal to each other."
+  }
+  else if ((length1 == length2) || (length2 == length3) || (length3 == length1)){
+    document.getElementById("answer").innerHTML =
+      "The triangle is an isosceles triangle because two of the lengths are equal to each other."
+  }
+  else if ((length1 != length2) && (length2 != length3) && (length3 != length1)){
+    document.getElementById("answer").innerHTML =
+      "The triangle is a scalene triangle because none of the lengths are equal to each other."
   }
   else {
     document.getElementById("answer").innerHTML =
-      "You are " + age + " years old, so you can see G rated movies."
+      "Something went wrong."
   }
 }

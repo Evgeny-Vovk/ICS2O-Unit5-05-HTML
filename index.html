@@ -27,14 +27,33 @@
         </div>
       </header>
       <main class="mdl-layout__content margin-left">
-        <img src="./img/movie.png" alt="movie" class="margin-top" width="300px" height="250px">
-        <h1>Enter your age.</h1>
+        <img src="./img/triangles.png" alt="triangles" class="margin-top" width="400px" height="154px">
+        <h1>Input the three lengths of your triangle.</h1>
         <br>
         <!-- Numeric Textfield -->
+        <p>Enter the first length:</p>
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age">
-            <label class="mdl-textfield__label" for="age">Age...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length1">
+            <label class="mdl-textfield__label" for="length1">Length 1...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <p>Enter the second length:</p>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length2">
+            <label class="mdl-textfield__label" for="length2">Length 2...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <p>Enter the third length:</p>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length3">
+            <label class="mdl-textfield__label" for="length3">Length 3...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
