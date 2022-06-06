@@ -21,7 +21,7 @@ function calculate() {
   // process
   if ((length1 <= 0) || (length2 <= 0) || (length3 <= 0)){
     document.getElementById("answer").innerHTML =
-      "A length can't be 0 or negative number."
+      "The length cannot be 0 or negative number."
   }
   else if ((length1 == length2) && (length2 == length3)) {
     document.getElementById("answer").innerHTML =
