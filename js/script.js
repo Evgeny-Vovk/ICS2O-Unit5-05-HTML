@@ -14,24 +14,24 @@ if (navigator.serviceWorker) {
 function calculate() {
 
   //input
-  const length1 = parseInt(document.getElementById('length1').value)
-  const length2 = parseInt(document.getElementById('length2').value)
-  const length3 = parseInt(document.getElementById('length3').value)
+  const firstLength = parseInt(document.getElementById('first-length').value)
+  const secondLength = parseInt(document.getElementById('second-length').value)
+  const thirdLength = parseInt(document.getElementById('third-length').value)
 
   // process
-  if ((length1 <= 0) || (length2 <= 0) || (length3 <= 0)){
+  if ((firstLength <= 0) || (secondLength <= 0) || (thirdLength <= 0)){
     document.getElementById("answer").innerHTML =
       "The length cannot be 0 or negative number."
   }
-  else if ((length1 == length2) && (length2 == length3)) {
+  else if ((firstLength == secondLength) && (secondLength == thirdLength)) {
     document.getElementById("answer").innerHTML =
       "The triangle is an equilateral triangle because all of the lengths and angles are same and equal to each other."
   }
-  else if ((length1 == length2) || (length2 == length3) || (length3 == length1)){
+  else if ((firstLength == secondLength) || (secondLength == thirdLength) || (thirdLength == firstLength)){
     document.getElementById("answer").innerHTML =
       "The triangle is an isosceles triangle because two of the lengths are equal to each other."
   }
-  else if ((length1 != length2) && (length2 != length3) && (length3 != length1)){
+  else if ((firstLength != secondLength) && (secondLength != thirdLength) && (thirdLength != firstLength)){
     document.getElementById("answer").innerHTML =
       "The triangle is a scalene triangle because none of the lengths are equal to each other."
   }
